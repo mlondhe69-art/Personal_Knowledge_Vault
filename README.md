@@ -102,6 +102,7 @@ mvn spring-boot:run
 The backend application will be available at:
 
 http://localhost:8080
+```
 
 ## 4️⃣ Tech Stack
 🖥️ Frontend
