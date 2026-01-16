@@ -1,0 +1,328 @@
+/* ===============================
+   Home Page (Personal Knowledge Vault)
+   Theme: Dark + Glass UI
+================================ */
+
+/* ✅ Global Fix: prevents overflow issues */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* ===============================
+   Main container background
+================================ */
+.home-container {
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+  overflow-x: hidden;
+
+  background:
+    linear-gradient(rgba(10, 20, 40, 0.9), rgba(10, 20, 40, 0.9)),
+    url("/images/home-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 0;
+  margin: 0;
+}
+
+/* ===============================
+   Navbar
+================================ */
+.home-navbar {
+  width: 100%;
+  padding: 18px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  background: rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.home-navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* ===============================
+   Buttons
+================================ */
+.btn-primary {
+  padding: 10px 18px;
+  border-radius: 12px;
+
+  background: rgba(88, 101, 242, 0.85);
+  color: white;
+
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid rgba(88, 101, 242, 0.9);
+
+  transition: 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background: rgba(88, 101, 242, 1);
+}
+
+.btn-outline {
+  padding: 10px 18px;
+  border-radius: 12px;
+
+  background: transparent;
+  color: white;
+
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  transition: 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  white-space: nowrap;
+}
+
+.btn-outline:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ===============================
+   Hero Section
+================================ */
+.hero-section {
+  width: 100%;
+  padding: 70px 40px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+
+  max-width: 1200px;
+  margin: auto;
+
+  flex-wrap: wrap;
+}
+
+/* ✅ IMPORTANT FIX: allow flex items to shrink */
+.hero-text,
+.hero-image {
+  min-width: 0;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  max-width: 520px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Hero Actions */
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-actions a {
+  width: auto;
+  min-width: 140px;
+  text-align: center;
+}
+
+/* Hero Image */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  object-fit: contain;
+
+  border-radius: 18px;
+  display: block;
+
+  filter: drop-shadow(0px 18px 30px rgba(0, 0, 0, 0.55));
+}
+
+/* ===============================
+   Features Section
+================================ */
+.features-section {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding: 30px 40px 50px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.feature-card {
+  padding: 22px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(12px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+
+  transition: 0.2s ease;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.feature-card h3 {
+  margin: 12px 0 8px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.feature-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ===============================
+   Footer
+================================ */
+.home-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+/* ===============================
+   Responsive Fix
+================================ */
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 55px 20px 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-text p {
+    margin: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .features-section {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .home-navbar {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 45px 16px 25px;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-navbar {
+    padding: 12px 14px;
+  }
+
+  .home-navbar nav a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .hero-actions a {
+    width: 100%;
+    min-width: unset;
+  }
+}

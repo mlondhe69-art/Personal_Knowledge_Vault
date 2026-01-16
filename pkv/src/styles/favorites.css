@@ -1,0 +1,194 @@
+.favorites-container {
+  padding: 30px;
+  min-height: 100vh;
+  color: white;
+}
+
+/* Header */
+.favorites-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.favorites-title {
+  font-size: 28px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.favorites-subtitle {
+  margin-top: 6px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Back Button */
+.back-notes-btn {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  transition: 0.2s ease;
+}
+
+.back-notes-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* Grid */
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.fav-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 18px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  transition: 0.2s ease;
+}
+
+.fav-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+/* Top section */
+.fav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.fav-title {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.fav-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 215, 0, 0.15);
+  border: 1px solid rgba(255, 215, 0, 0.35);
+  color: rgba(255, 215, 0, 0.95);
+}
+
+/* Content */
+.fav-content {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+  line-height: 1.45;
+  margin: 0 0 16px 0;
+
+  /* clamp text */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Actions */
+.fav-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.fav-btn {
+  padding: 9px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  transition: 0.2s ease;
+}
+
+.fav-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* Edit Button */
+.fav-btn.edit {
+  background: rgba(66, 133, 244, 0.18);
+  border: 1px solid rgba(66, 133, 244, 0.35);
+}
+
+.fav-btn.edit:hover {
+  background: rgba(66, 133, 244, 0.28);
+}
+
+/* Delete Button */
+.fav-btn.delete {
+  background: rgba(255, 80, 80, 0.18);
+  border: 1px solid rgba(255, 80, 80, 0.35);
+}
+
+.fav-btn.delete:hover {
+  background: rgba(255, 80, 80, 0.28);
+}
+
+/* Empty State */
+.favorites-empty {
+  margin-top: 60px;
+  text-align: center;
+  padding: 35px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.favorites-empty h3 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+}
+
+.favorites-empty p {
+  margin: 0 0 20px 0;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.go-notes-btn {
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.14);
+  color: white;
+  transition: 0.2s ease;
+}
+
+.go-notes-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Loading */
+.favorites-loading {
+  margin-top: 60px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+}

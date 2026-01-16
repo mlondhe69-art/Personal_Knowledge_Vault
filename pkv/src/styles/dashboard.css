@@ -1,0 +1,228 @@
+/* =========================================
+   DASHBOARD – PERSONAL KNOWLEDGE VAULT
+   Full file with navbar + cards + theme
+========================================= */
+
+/* ---------- ROOT CONTAINER ---------- */
+.dashboard-container {
+  min-height: 100vh;
+  background: transparent; /* inherit app-layout gradient */
+  color: #e5e7eb;
+  animation: fadeIn 0.6s ease-in;
+}
+
+/* ---------- NAVBAR ---------- */
+.dashboard-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 64px;
+  background: rgba(2, 6, 23, 0.65);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+/* Right side */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Profile */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #e5e7eb;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.profile:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.profile-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #334155;
+  color: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Logout Button */
+.logout-btn {
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #1e293b;
+  color: #f8fafc;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: #334155;
+}
+
+/* ---------- WELCOME SECTION ---------- */
+.welcome-section {
+  padding: 48px 64px 0;
+}
+
+.welcome-section h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 6px;
+}
+
+.welcome-section p {
+  font-size: 15px;
+  color: #94a3b8;
+  margin-bottom: 18px;
+}
+
+/* Info banner */
+.info-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid #64748b;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #cbd5e1;
+  max-width: 520px;
+}
+
+/* ---------- CARD GRID ---------- */
+.card-grid {
+  padding: 40px 64px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+/* Base Card */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 26px;
+  transition: transform 0.25s ease, background 0.25s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.card h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 12px;
+}
+
+/* Hero Card */
+.hero-card {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- BUTTONS ---------- */
+.primary-btn {
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: none;
+  background: #1e293b;
+  color: #f8fafc;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.primary-btn:hover {
+  background: #334155;
+}
+
+.secondary-btn {
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px 16px;
+  background: transparent;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  color: #cbd5e1;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.secondary-btn:hover {
+  background: rgba(148, 163, 184, 0.08);
+}
+
+.muted-text {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .dashboard-navbar {
+    padding: 16px 24px;
+  }
+
+  .welcome-section {
+    padding: 32px 24px 0;
+  }
+
+  .card-grid {
+    padding: 32px 24px;
+  }
+
+  .welcome-section h1 {
+    font-size: 26px;
+  }
+}
+
+/* ---------- ANIMATION ---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

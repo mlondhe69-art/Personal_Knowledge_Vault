@@ -1,0 +1,120 @@
+.notes-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+/* Header */
+.notes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  padding: 20px 24px;
+  border-radius: 18px;
+  margin-bottom: 32px;
+}
+
+.notes-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+/* Button */
+.add-note-btn {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.add-note-btn:hover {
+  opacity: 0.9;
+}
+
+/* Grid */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* Empty State */
+.empty-notes {
+  text-align: center;
+  padding: 80px 20px;
+  color: #94a3b8;
+}
+
+.empty-notes p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #e5e7eb;
+}
+
+.empty-notes span {
+  font-size: 14px;
+}
+/* ===== NOTES GRID ===== */
+.notes-content {
+  margin-top: 30px;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* ===== NOTE CARD ===== */
+.note-card {
+  background: linear-gradient(
+    145deg,
+    rgba(30, 38, 60, 0.9),
+    rgba(22, 28, 45, 0.95)
+  );
+  border-radius: 16px;
+  padding: 18px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  transition: all 0.25s ease;
+}
+
+/* Hover effect */
+.note-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.45);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+/* ===== NOTE TITLE ===== */
+.note-card h4 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #f8fafc;
+  word-break: break-word;
+}
+
+/* ===== NOTE CONTENT ===== */
+.note-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #cbd5f5;
+  line-height: 1.5;
+
+  /* limit content height */
+  max-height: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.note-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
