@@ -63,7 +63,7 @@ cd Personal_Knowledge_Vault
 
 
 ### 🔹 Step 1: Navigate to the Frontend Folder
-```bash
+
 cd frontend
 
 🔹 Step 2: Install Dependencies
